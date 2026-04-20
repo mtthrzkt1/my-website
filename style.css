@@ -11,9 +11,23 @@ body {
   width: 90%;
   max-width: 800px;
   margin: 20px auto;
+  padding: 20px;
+}
+
+/* Hover Effect for Animal Cards */
+.animal-card {
   background-color: #1e293b;
   padding: 20px;
   border-radius: 15px;
+  margin-bottom: 25px;
+  /* This makes the movement smooth */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animal-card:hover {
+  transform: scale(1.03); /* Makes it slightly bigger */
+  background-color: #334155; /* Changes color slightly */
+  cursor: pointer;
 }
 
 /* Titles */
@@ -24,6 +38,7 @@ h1 {
 
 h2 {
   color: #38bdf8;
+  margin-top: 0;
 }
 
 /* Images */
@@ -40,22 +55,24 @@ p {
   line-height: 1.5;
 }
 
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .container {
     width: 95%;
-    padding: 15px;
+    padding: 10px;
   }
 
-  p {
-    font-size: 18px; 
+  .animal-card:hover {
+    transform: none; /* Disable scaling on phones for better UX */
   }
 
   h1 {
     font-size: 28px;
-  }
-  
-  h2 {
-    font-size: 22px;
   }
 }
