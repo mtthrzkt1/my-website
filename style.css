@@ -14,19 +14,18 @@ body {
   padding: 20px;
 }
 
-/* Hover Effect for Animal Cards */
+/* Card Styling (Reusable for history, cities, and animals) */
 .animal-card {
   background-color: #1e293b;
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 25px;
-  /* This makes the movement smooth */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .animal-card:hover {
-  transform: scale(1.03); /* Makes it slightly bigger */
-  background-color: #334155; /* Changes color slightly */
+  transform: scale(1.02);
+  background-color: #334155;
   cursor: pointer;
 }
 
@@ -69,10 +68,10 @@ p {
   }
 
   .animal-card:hover {
-    transform: none; /* Disable scaling on phones for better UX */
+    transform: none; /* Keeps the site stable on phones */
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
