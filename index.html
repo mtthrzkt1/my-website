@@ -3,44 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar: Nature & History</title>
+    <title>Madagascar: Nature & Culture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <a href="#history">History</a>
+        <a href="#cities">Cities</a>
+        <a href="#wildlife">Wildlife</a>
+        <a href="#geography">Geography</a>
+        <a href="#football">Football</a>
+        <a href="#culture">Culture</a>
+    </nav>
+
     <div class="container">
         <h1>Welcome to Madagascar 🇲🇬</h1>
 
-        <div class="animal-card">
+        <section id="history" class="card">
             <h2>History</h2>
-            <p>Madagascar was first settled by Austronesian voyagers over 2,000 years ago. Later, the Kingdom of Madagascar unified the island in the 19th century before becoming a French colony. It finally regained independence in 1960.</p>
-        </div>
+            <p>Madagascar was first settled by Austronesian voyagers over 2,000 years ago. It later became a unified Kingdom in the 19th century before becoming a French colony, regaining independence in 1960.</p>
+        </section>
 
-        <div class="animal-card">
+        <section id="cities" class="card">
             <h2>Major Cities</h2>
             <p><strong>Antananarivo:</strong> The bustling capital city in the central highlands.</p>
             <p><strong>Toamasina:</strong> The country's most important port on the east coast.</p>
-            <p><strong>Antsirabe:</strong> Known for its thermal baths and colonial architecture.</p>
-        </div>
+        </section>
 
-        <h1>Unique Wildlife 🐒</h1>
-        <div class="animal-card">
-            <h2>Lemur</h2>
-            <img src="lemur.jpg" alt="Lemur">
-            <p>Lemurs are found only in Madagascar.</p>
-        </div>
+        <section id="wildlife">
+            <h1>Unique Wildlife 🐒</h1>
+            <div class="card">
+                <h2>Lemur</h2>
+                <img src="lemur.jpg" alt="Lemur">
+                <p>Lemurs are unique primates found only in Madagascar.</p>
+            </div>
+            <div class="card">
+                <h2>Fossa</h2>
+                <img src="fossa.jpg" alt="Fossa">
+                <p>The fossa is the top predator of the island.</p>
+            </div>
+            <div class="card">
+                <h2>Chameleon</h2>
+                <img src="chameleon.jpg" alt="Chameleon">
+                <p>Chameleons can change color and live in trees.</p>
+            </div>
+        </section>
 
-        <div class="animal-card">
-            <h2>Fossa</h2>
-            <img src="fossa.jpg" alt="Fossa">
-            <p>The fossa is the top predator of Madagascar.</p>
-        </div>
+        <section id="geography" class="card">
+            <h2>Geography & Climate</h2>
+            <p>Madagascar is the fourth-largest island in the world. It has a tropical climate, with a hot, rainy season (November to April) and a cooler, dry season (May to October).</p>
+        </section>
 
-        <div class="animal-card">
-            <h2>Chameleon</h2>
-            <img src="chameleon.jpg" alt="Chameleon">
-            <p>Chameleons can change color and live in trees.</p>
-        </div>
+        <section id="football" class="card">
+            <h2>Football: The Barea</h2>
+            <img src="barea.jpg" alt="Madagascar Football Team">
+            <p>The national team is known as "The Barea." They made history in 2019 by reaching the quarter-finals of the Africa Cup of Nations!</p>
+        </section>
+
+        <section id="culture" class="card">
+            <h2>Culture & Cuisine</h2>
+            <p>Madagascan food is delicious! Try <strong>Romazava</strong> (meat stew) or <strong>Ravitoto</strong> (pork with crushed cassava leaves).</p>
+        </section>
         
         <p class="footer">Made by Matthieu 😎</p> 
     </div>
