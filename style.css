@@ -1,14 +1,12 @@
-/* General Layout */
 body {
     margin: 0;
-    padding-top: 80px; /* Space for the fixed navbar */
+    padding-top: 100px;
     font-family: 'Poppins', sans-serif;
     background-color: #0f172a;
     color: white;
     text-align: center;
 }
 
-/* Sticky Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -29,34 +27,20 @@ body {
     font-size: 14px;
 }
 
-.navbar a:hover {
-    color: #22c55e;
-}
-
-/* Containers & Cards */
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
-}
+.container { width: 90%; max-width: 800px; margin: 0 auto; }
 
 .card {
     background-color: #1e293b;
     padding: 20px;
     margin-bottom: 25px;
     border-radius: 15px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: 0.3s;
 }
 
-.card:hover {
-    transform: scale(1.02);
-    background-color: #334155;
-    cursor: pointer;
-}
+.card:hover { background-color: #334155; }
 
-/* Elements */
-h1 { color: #22c55e; margin-top: 40px; }
-h2 { color: #38bdf8; margin-top: 0; }
+h1 { color: #22c55e; }
+h2 { color: #38bdf8; }
 
 img {
     max-width: 100%;
@@ -65,10 +49,8 @@ img {
     margin-top: 10px;
 }
 
-.footer { margin-top: 40px; font-size: 14px; opacity: 0.7; }
+.footer { margin-top: 40px; opacity: 0.7; }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar a { font-size: 11px; margin: 0 4px; }
-    .card:hover { transform: none; }
 }
